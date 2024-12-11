@@ -6,8 +6,8 @@ import fashionAppImgHover from "../assets/task-hover.png";
 
 const projects = [
   {
-    title: "Fintech App",
-    description: "A full-stack fintech app with React and Flutterwave API.",
+    title: "Task Management App",
+    description: "A full-stack task management system using react mongodb and nodejs. ",
     link: "#",
     image: fintechAppImg,
     hoverImage: fintechAppImgHover,
