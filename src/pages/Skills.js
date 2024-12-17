@@ -1,5 +1,3 @@
-
-
 function CircularProgress({ percentage }) {
   const radius = 50;
   const circumference = 2 * Math.PI * radius;
@@ -7,7 +5,13 @@ function CircularProgress({ percentage }) {
   const progressOffset = circumference - (percentage / 100) * circumference;
 
   return (
-    <svg width="120" height="120" className="mx-auto">
+    <svg
+      width="120"
+      height="120"
+      className="mx-auto"
+      role="img"
+      aria-label={`Skill proficiency: ${percentage}%`}
+    >
       <circle
         cx="60"
         cy="60"
@@ -51,7 +55,10 @@ function Skills() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto mt-10 p-4 grid grid-cols-2 gap-6">
+    <div
+      id="skills"
+      className="max-w-4xl mx-auto mt-10 p-4 grid grid-cols-1 md:grid-cols-2 gap-6"
+    >
       <h2 className="text-2xl font-bold text-center col-span-2 mb-6">My Skills</h2>
       {skills.map((skill, index) => (
         <div key={index} className="text-center">
