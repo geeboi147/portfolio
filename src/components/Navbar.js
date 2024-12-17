@@ -113,7 +113,7 @@ function Navbar() {
               <a
                 href="#skills"
                 className="hover:text-blue-500"
-                onClick={(e) => handleSmoothScroll(e, "#about")}
+                onClick={(e) => handleSmoothScroll(e, "#skills")}
               >
                 Skills
               </a>
